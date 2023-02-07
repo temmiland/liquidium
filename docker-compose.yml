@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    restart: unless-stopped
+    build:
+      context: ./db
+    environment:
+      - USER=liquidium
+      - PASS=liquidium
+      - BUCKET=liquidium
+    ports:
+      - 8091:8091
+      - 8092:8092
+      - 8093:8093
+      - 8094:8094
+      - 11210:11210
+
+  frontend:
+    restart: unless-stopped
+    build:
+      context: ./frontend
+    ports:
+      - 80:80
+
+  backend:
+    restart: unless-stopped
+    build:
+      context: ./backend
+    ports:
+      - 8081:8081
+
