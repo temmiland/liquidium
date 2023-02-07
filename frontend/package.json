@@ -1,0 +1,113 @@
+{
+	"name": "liquidium",
+	"version": "1.0.0",
+	"description": "Liquidium is a powerful react wiki.",
+	"author": "Tom Pietsch <hello@tomxpcvx.dev>, hydrograv GmbH <opensource@hydrograv.com>",
+	"homepage": "https://liquidium.tomxpcvx.dev",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tomxpcvx/liquidium.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tomxpcvx/liquidium/issues"
+	},
+	"keywords": [
+		"react",
+		"liquidium",
+		"wiki"
+	],
+	"private": true,
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"source": "src/index.html",
+	"files": [
+		"dist"
+	],
+	"staticFiles": {
+		"staticPath": "./src/public"
+	},
+	"alias": {
+		"@liquidium/ducks": "./src/ducks",
+		"@liquidium/helpers": "./src/helpers",
+		"@liquidium/components": "./src/components"
+	},
+	"scripts": {
+		"preinstall": "npx force-resolutions",
+		"prepare": "cd .. && husky install frontend/.husky",
+		"start": "cross-env LIQUIDIUM_MIRAGE_MODE=0 parcel",
+		"build": "parcel build",
+		"dev": "cross-env LIQUIDIUM_MIRAGE_MODE=1 parcel",
+		"test": "start-server-and-test dev http://localhost:1234 cypress:test && npm run lint",
+		"lint": "eslint --ext .js,.jsx .",
+		"lint:fix": "eslint --fix --ext .js,.jsx .",
+		"cypress:open": "cypress open --config watchForFileChanges=false",
+		"cypress:test": "cypress run",
+		"cypress:install": "cypress install"
+	},
+	"dependencies": {
+		"@axa-fr/react-oidc": "^6.6.1",
+		"@fortawesome/fontawesome-svg-core": "^6.1.2",
+		"@fortawesome/free-solid-svg-icons": "^6.1.2",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@reduxjs/toolkit": "^1.8.5",
+		"array-to-tree": "^3.3.2",
+		"axios": "^0.27.2",
+		"cross-env": "^7.0.3",
+		"crypto-js": "^4.1.1",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.4",
+		"prop-types": "^15.8.1",
+		"quill-delta": "^5.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-quill": "^2.0.0",
+		"react-redux": "^8.0.2",
+		"react-router-dom": "^6.3.0",
+		"react-select": "^5.4.0",
+		"react-twemoji": "^0.5.0",
+		"redux-loop": "^6.2.0",
+		"redux-persist": "^6.0.0",
+		"styled-components": "^5.3.5",
+		"typeface-roboto": "^1.1.13"
+	},
+	"devDependencies": {
+		"@parcel/config-default": "^2.7.0",
+		"@parcel/packager-raw-url": "^2.7.0",
+		"@parcel/transformer-webmanifest": "^2.7.0",
+		"cypress": "^10.6.0",
+		"del": "^7.0.0",
+		"eslint": "^8.22.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-plugin-cypress": "^2.12.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsdoc": "^39.3.6",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-mdx": "^2.0.5",
+		"eslint-plugin-mocha": "^10.1.0",
+		"eslint-plugin-react": "^7.31.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.1",
+		"miragejs": "^0.1.45",
+		"parcel": "^2.7.0",
+		"parcel-reporter-static-files-copy": "^1.4.0",
+		"process": "^0.11.10",
+		"start-server-and-test": "^1.14.0"
+	},
+	"resolutions": {
+		"react-refresh": "0.11.0",
+		"trim-newlines": "3.0.1",
+		"trim": "0.0.3",
+		"glob-parent": "5.1.2"
+	}
+}

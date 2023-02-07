@@ -1,0 +1,103 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:jsdoc/recommended",
+		"plugin:mdx/recommended",
+		"plugin:cypress/recommended",
+		"plugin:mocha/recommended"
+	],
+	"plugins": ["jsdoc", "cypress", "mocha"],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"rules": {
+		"func-names": 0,
+		"comma-dangle": [2, "never"],
+		"no-console": 1,
+		"max-len": [2, 100],
+		"import/no-extraneous-dependencies": 0,
+		"no-param-reassign": 0,
+		"no-unneeded-ternary": 0,
+		"class-methods-use-this": 0,
+		"no-plusplus": 0,
+		"arrow-body-style": 0,
+		"arrow-parens": 0,
+		"no-lonely-if": 0,
+		"react/jsx-filename-extension": 0,
+		"no-nested-ternary": 0,
+		"no-mixed-spaces-and-tabs": 2,
+		"indent": ["error", "tab"],
+		"no-irregular-whitespace": "error",
+		"no-trailing-spaces": "error",
+		"object-curly-newline": [
+			"error",
+			{
+				"ObjectExpression": { "minProperties": 1 },
+				"ObjectPattern": { "multiline": true },
+				"ImportDeclaration": {
+					"multiline": true,
+					"minProperties": 5
+				},
+				"ExportDeclaration": {
+					"multiline": true,
+					"minProperties": 5
+				}
+			}
+		],
+		"array-element-newline": ["error", "consistent"],
+		"object-curly-spacing": ["error", "always"],
+		"react/jsx-curly-spacing": [2, { "when": "always" }],
+		"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+		"no-unused-expressions": "off",
+		"mdx/no-unused-expressions": "off",
+		"no-unused-vars": 1,
+		"react/jsx-curly-newline": [
+			"error",
+			{
+				"multiline": "consistent",
+				"singleline": "consistent"
+			}
+		],
+		"react/prop-types": "off",
+		"react/jsx-one-expression-per-line": [2, { "allow": "single-child" }],
+		"quotes": ["error", "single"],
+		"react/display-name": 0,
+		"mocha/no-mocha-arrows": 0,
+		"cypress/no-unnecessary-waiting": "off"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"ecmaVersion": 2022,
+			"jsx": true,
+			"modules": true,
+			"sourceType": "module"
+		}
+	},
+	"ignorePatterns": ["node_modules/", "dist/", ".parcel-cache/"],
+	"settings": {
+		"react": {
+			"createClass": "createReactClass",
+			"pragma": "React",
+			"version": "detect",
+			"flowVersion": "0.53"
+		},
+		"propWrapperFunctions": [
+			"forbidExtraProps",
+			{
+				"property": "freeze",
+				"object": "Object"
+			},
+			{ "property": "myFavoriteWrapper" }
+		],
+		"linkComponents": [
+			"Hyperlink",
+			{
+				"name": "Link",
+				"linkAttribute": "to"
+			}
+		]
+	}
+}
