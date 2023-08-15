@@ -75,3 +75,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# ----------------
+# Other
+# ----------------
+uncommited_files
