@@ -240,3 +240,6 @@ cypress/videos
 # Other
 # ----------------
 uncommited_files
+
+release/build
+release/app/dist

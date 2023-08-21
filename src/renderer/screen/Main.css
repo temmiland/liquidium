@@ -1,0 +1,57 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background: rgb(25, 25, 25);
+  font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cet-container {
+  top: 0 !important;
+}
+
+.cet-mac .cet-title.cet-title-left {
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+.sidebar {
+  background: rgb(32, 32, 32);
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #323232;
+}
+
+.content {
+  position: absolute;
+  top: 15px;
+  left: 300px;
+}
+
+.quill-container {
+  width: 100%;
+  height: 100%;
+}
+
+.quill-container .ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 1px solid #323232;
+}
+
+
+.quill-container .ql-container.ql-snow {
+  border: none;
+}
