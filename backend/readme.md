@@ -1,9 +1,9 @@
 # Liquidium
 
-[![GitHub license](https://img.shields.io/github/license/tomxpcvx/liquidium)](https://github.com/tomxpcvx/liquidium/blob/main/LICENSE.md)
-[![GitHub issues](https://img.shields.io/github/issues/tomxpcvx/liquidium)](https://github.com/tomxpcvx/liquidium/issues)
-[![GitHub forks](https://img.shields.io/github/forks/tomxpcvx/liquidium)](https://github.com/tomxpcvx/liquidium/network)
-[![GitHub stars](https://img.shields.io/github/stars/tomxpcvx/liquidium)](https://github.com/tomxpcvx/liquidium/stargazers)
+[![GitHub license](https://img.shields.io/github/license/temmiland/liquidium)](https://github.com/temmiland/liquidium/blob/main/LICENSE.md)
+[![GitHub issues](https://img.shields.io/github/issues/temmiland/liquidium)](https://github.com/temmiland/liquidium/issues)
+[![GitHub forks](https://img.shields.io/github/forks/temmiland/liquidium)](https://github.com/temmiland/liquidium/network)
+[![GitHub stars](https://img.shields.io/github/stars/temmiland/liquidium)](https://github.com/temmiland/liquidium/stargazers)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 Liquidium is a powerful wiki tool written in JavaScript with ReactJS with a Spring Backend written in Java.
@@ -33,7 +33,7 @@ java -jar ./target/liquidium-1.0.0.jar
 
 ## Known issues
 
-The Liquidium project tracks its issues [here](https://github.com/tomxpcvx/liquidium/issues).
+The Liquidium project tracks its issues [here](https://github.com/temmiland/liquidium/issues).
 
 ## Changelog
 

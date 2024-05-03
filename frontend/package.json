@@ -2,15 +2,15 @@
 	"name": "liquidium",
 	"version": "1.0.0",
 	"description": "Liquidium is a powerful react wiki.",
-	"author": "Tom Pietsch <hello@tomxpcvx.dev>, hydrograv GmbH <opensource@hydrograv.com>",
-	"homepage": "https://liquidium.tomxpcvx.dev",
+	"author": "Temmi Pietsch <welcome@temmi.land>, hydrograv GmbH <opensource@hydrograv.com>",
+	"homepage": "https://temmi.land/projects/liquidium",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/tomxpcvx/liquidium.git"
+		"url": "git+https://github.com/temmilanddd/liquidium.git"
 	},
 	"bugs": {
-		"url": "https://github.com/tomxpcvx/liquidium/issues"
+		"url": "https://github.com/temmiland/liquidium/issues"
 	},
 	"keywords": [
 		"react",

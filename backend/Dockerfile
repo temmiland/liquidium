@@ -1,13 +1,13 @@
 #
 # Copyright (c) 2019-2022
-# Tom Pietsch <hello@tomxpcvx.dev> & hydrograv GmbH <opensource@hydrograv.com>
+# Temmi Pietsch <welcome@temmi.land> & hydrograv GmbH <opensource@hydrograv.com>
 #
 # This file is part of Liquidium which is released under MIT license.
-# See file license.md or go to https://github.com/tomxpcvx/liquidium/ for full license details.
+# See file license.md or go to https://github.com/temmiland/liquidium/ for full license details.
 #
 
 FROM openjdk:8-jdk-alpine as builder
-LABEL maintainer="Tom Pietsch <hello@tomxpcvx.dev>"
+LABEL maintainer="Temmi Pietsch <welcome@temmi.land>"
 
 COPY . /app
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN sh ./mvnw clean package
 # ------
 
 FROM openjdk:8-jdk-alpine
-LABEL maintainer="Tom Pietsch <hello@tomxpcvx.dev>"
+LABEL maintainer="Temmi Pietsch <welcome@temmi.land>"
 
 COPY --from=builder /app/target/ /app/
 WORKDIR /app
